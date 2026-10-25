@@ -6,15 +6,46 @@
 .brandorra-promo-banner img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:inherit}
 @media(max-width:1450px){.page-content{padding:22px 20px}.topbar{padding:0 20px}.sidebar{width:220px}.main-area{margin-left:220px}.kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.dashboard-grid{grid-template-columns:1.2fr 1fr}.events-panel{grid-column:1/-1}.events-panel .event-row{display:inline-flex;width:49%;border-right:1px solid #eef1f6}.service-content{gap:12px}.donut{width:125px;height:125px}.donut:after{inset:25px}.recruitment-layout{grid-template-columns:minmax(0,1fr) 250px}}
 @media(max-width:1000px){.sidebar{transform:translateX(-105%);transition:transform .2s ease;width:250px}.sidebar.open{transform:translateX(0)}.main-area{margin-left:0}.menu-toggle{display:inline-flex}.close-mobile{display:inline-flex;border:0;background:transparent;color:#fff}.brand{justify-content:space-between}.scrim{display:block;position:fixed;inset:0;background:#0f172a70;z-index:25;border:0}.dashboard-grid{grid-template-columns:1fr 1fr}.revenue-panel{grid-column:1/-1}.events-panel{grid-column:auto}.events-panel .event-row{display:flex;width:100%;border-right:0}.recruitment-layout{grid-template-columns:1fr}.resume-preview{border-left:0;border-top:1px solid #e9edf4}.source-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.pipeline{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:640px){.welcome-row{align-items:stretch;flex-direction:column;gap:13px}.welcome-text{flex:1 1 auto}.dashboard-refresh{margin-top:10px}.brandorra-promo-banner{flex:none;width:100%;height:76px;margin:0 0 14px}.brandorra-promo-banner img{object-position:center}.topbar{height:58px;padding:0 12px;gap:8px}.global-search{padding:0 8px}.global-search kbd,.date-pill span,.top-actions>.avatar{display:none}.top-actions{gap:5px}.date-pill{padding:0 8px}.page-content{padding:19px 12px 12px}.welcome-row{align-items:flex-start;flex-direction:column;gap:12px}.welcome-row h1{font-size:23px}.kpi-grid,.kpi-grid.three{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.kpi{padding:11px 9px;gap:8px}.kpi-icon{width:31px;height:31px}.kpi-content strong{font-size:16px}.kpi-content>span{font-size:9px}.kpi-content small{font-size:8px}.dashboard-grid{grid-template-columns:1fr}.revenue-panel,.events-panel{grid-column:auto}.service-content{justify-content:space-around}.section-title{align-items:flex-start}.section-title h2{font-size:20px}.section-title p{line-height:1.5}.section-title .btn{height:32px;padding:0 8px;font-size:10px}.toolbar{gap:7px}.search-field{max-width:none;flex-basis:100%}.toolbar select{flex:1;max-width:none}.source-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.source-card:last-child{grid-column:1/-1}.candidate-table table{min-width:720px}.pipeline{grid-template-columns:repeat(2,minmax(0,1fr));padding:13px}.calendar-grid{padding:8px}.calendar-day{min-height:58px;padding:4px;font-size:9px}.cal-event{font-size:8px;padding:3px 2px;margin-top:6px}.calendar-controls .btn{padding:0 8px}.report-grid{grid-template-columns:1fr 1fr;padding:10px}.report-card{padding:12px}.footer{flex-direction:column;gap:5px}.form-grid{grid-template-columns:1fr}.modal{padding:17px}.events-panel .event-row{padding:9px}.event-count{font-size:8px}.service-legend{min-width:120px}.donut{width:120px;height:120px}.donut:after{inset:24px}}
 
-/* Recruitment workflow enhancements — additive styles to preserve the approved layout */
-.candidate-stage-select{height:28px;max-width:120px;border:1px solid #e1e7f0;border-radius:6px;background:#fff;color:#536077;padding:0 6px;font-size:10px}
-.empty-state{display:flex;flex-direction:column;align-items:center;gap:9px;padding:28px 16px;color:#7d889b;font-size:11px;text-align:center}
-.empty-state svg{color:#9aa9c0}
-.empty-state b{font-size:13px;color:#293448}
-.empty-state .btn{margin-top:4px}
-.download-link{text-decoration:none}
+/* Brandorra promotional banner */
+.brandorra-promo-banner {
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  margin: 0 0 20px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #101827;
+  border: 1px solid #e5eaf2;
+  box-shadow: 0 5px 18px #1720330a;
+}
+
+.brandorra-promo-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: inherit;
+}
+
+/* Tablet and mobile */
+@media (max-width: 640px) {
+  .brandorra-promo-banner {
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px;
+  }
+
+  .brandorra-promo-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
 .candidate-modal{width:min(760px,100%)}
 .candidate-form-grid{margin-bottom:14px}
 .candidate-form-grid .full-form-field{grid-column:1/-1}
